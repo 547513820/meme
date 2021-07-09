@@ -1,0 +1,135 @@
+.meme_generator{
+    background-color: lightgray;
+    text-align: center;
+}
+.inputbox,tr,tbody{
+    width:80%;
+}
+#url,#top,#bottom{
+    width: 100%;
+}
+img{
+    max-width:500px;
+    max-height:500px;
+   
+}
+
+.lable_class{
+    display: flex;
+    justify-content:space-evenly;
+
+}
+.output_class{
+    display: grid;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    grid-template-columns: repeat(auto-fill,minmax(500px, 1fr));
+}
+table{
+    text-align: center;
+    margin: auto;
+}
+.bottomclass {
+    width: 100%;
+    font-size: xx-large;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    font-weight: bold;
+  }
+  /* cite from: https://fdossena.com/?p=html5cool/buttons/i.frag */
+  .button{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+    }
+
+.topclass {
+    width: 100%;
+    font-size:xx-large;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.textclass{
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    /* max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto; */
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
